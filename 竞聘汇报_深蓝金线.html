@@ -166,7 +166,7 @@ svg {
 
 /* ---------- chrome：顶栏 / 底栏 ---------- */
 .chrome,.foot{display:flex;justify-content:space-between;font:500 16px/1 var(--mono);letter-spacing:.14em}
-.chrome{padding-bottom:20px;border-bottom:1px solid var(--bd)} .foot{padding-top:20px;border-top:1px solid var(--bd)}
+.chrome{padding-bottom:20px;border-bottom:1px solid var(--bd)} .foot{padding-top:20px}
 .light .chrome,.light .foot{border-color:var(--bl)}
 .dark .chrome,.dark .foot{color:var(--muted-d)} .light .chrome,.light .foot{color:var(--muted-l)}
 .chrome .sec{color:var(--gold)}
@@ -228,18 +228,18 @@ td.c,th.c{text-align:center!important}
 .toc i{font:italic 400 46px/1 'Source Serif 4',serif;color:var(--gold);margin-right:22px;vertical-align:-4px}
 .toc b{font:600 32px/1 var(--serif);color:var(--cream)}
 .toc p{font:400 19px/1.5 var(--sans);color:var(--muted-d);margin:12px 0 0 74px}
-.cover .bot{position:absolute;left:140px;right:140px;bottom:70px;display:flex;justify-content:space-between;border-top:1px solid rgba(200,168,112,.28);padding-top:22px;font:500 18px/1 var(--mono);letter-spacing:.14em;color:var(--muted-d)}
+.cover .bot{position:absolute;left:140px;right:140px;bottom:70px;display:flex;justify-content:space-between;padding-top:22px;font:500 18px/1 var(--mono);letter-spacing:.14em;color:var(--muted-d)}
 
 .chapter .num{position:absolute;left:140px;top:250px;font:italic 400 220px/1 'Source Serif 4',serif;color:var(--gold)}
 .chapter .rule{position:absolute;left:150px;top:520px;height:1px;width:0;background:var(--gold);transition:width 1s var(--ease) .3s}
 .visible.chapter .rule{width:36px}
 .chapter h1{position:absolute;left:140px;top:570px;font:700 110px/1.2 var(--serif);color:var(--cream)}
 .chapter .sub{position:absolute;left:144px;top:720px;font:400 32px/1.6 var(--sans);color:var(--muted-d)}
-.chapter .map{position:absolute;right:140px;top:260px;width:860px;border-left:1px solid var(--bd);padding-left:56px}
-.chapter .map div{display:grid;grid-template-columns:150px 50px 1fr;align-items:baseline;padding:30px 0;border-bottom:1px solid var(--bd)}
+.chapter .map{position:absolute;right:140px;top:200px;width:860px;border-left:1px solid var(--bd);padding-left:56px}
+.chapter .map div{display:grid;grid-template-columns:150px 50px 1fr;align-items:baseline;padding:28px 0;border-bottom:1px solid var(--bd)}
 .chapter .map div:last-child{border:0}
 .chapter .map b{font:700 34px/1.3 var(--serif);color:var(--cream)} .chapter .map i{font-style:normal;color:var(--gold);font-family:var(--mono)}
-.chapter .map span{font:400 27px/1.5 var(--sans);color:var(--warm)} .chapter .map small{display:block;font:500 17px/1.4 var(--mono);color:var(--gold);letter-spacing:.1em;margin-bottom:6px}
+.chapter .map span{font:400 27px/1.5 var(--sans);color:var(--warm)} .chapter .map small{display:block;font:700 34px/1.3 var(--serif);color:var(--gold);margin-bottom:10px}
 
 .end .quote{position:absolute;left:140px;right:300px;top:300px;font:600 76px/1.45 var(--serif);color:var(--cream)}
 .end .qm{position:absolute;left:120px;top:150px;font:300 200px/1 var(--serif);color:var(--gold)}
@@ -261,44 +261,68 @@ td.c,th.c{text-align:center!important}
 .edit-toggle{position:fixed;top:16px;left:16px;z-index:10001;font:500 13px/1 sans-serif;padding:8px 12px;border-radius:16px;border:1px solid #888;background:#fff;opacity:0;pointer-events:none;transition:opacity .3s}
 .edit-toggle.show,.edit-toggle.active{opacity:1;pointer-events:auto}
 body.editing [contenteditable]{outline:1px dashed rgba(200,168,112,.6)}
+.m8{margin-top:44px;flex:1;display:flex;flex-direction:column}
+.m8head{display:grid;grid-template-columns:880px 110px 1fr;font:500 19px/1 var(--sans);letter-spacing:.2em;color:var(--gold);padding-bottom:18px;border-bottom:1px solid var(--gold)}
+.m8row{display:grid;grid-template-columns:880px 110px 1fr;align-items:center;border-bottom:1px solid var(--bd);flex:1}
+.m8row.m8team{border-top:1px dashed rgba(200,168,112,.45)}
+.m8l p{font:400 25px/1.55 var(--sans);color:var(--warm);margin:6px 0}
+.m8team .m8l p{color:var(--muted-d);font-style:normal}
+.m8a{display:flex;align-items:center;padding-right:20px}
+.m8a span{position:relative;display:block;height:2px;width:0;background:var(--gold);transition:width .7s var(--ease);transition-delay:calc(var(--d) + .2s)}
+.visible .m8a span{width:70px}
+.m8a span::after{content:'';position:absolute;right:-2px;top:-6px;border-left:12px solid var(--gold);border-top:7px solid transparent;border-bottom:7px solid transparent}
+.m8r{display:flex;align-items:baseline;gap:30px}
+.m8r b{font:700 40px/1.3 var(--serif);color:var(--cream);white-space:nowrap}
+.m8r p{font:400 23px/1.5 var(--sans);color:var(--muted-d)}
+.flow5{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:40px;margin-top:70px}
+.flow5 .fline{position:absolute;left:0;right:0;top:9px;height:2px;background:var(--gold);transform-origin:left;transform:scaleX(0);transition:transform 1.4s var(--ease) .25s}
+.visible .flow5 .fline{transform:scaleX(1)}
+.ph{position:relative;padding-top:48px}
+.ph .nd{position:absolute;top:0;left:0;width:20px;height:20px;border-radius:50%;background:var(--navy);border:2px solid var(--gold)}
+.ph .nd::after{content:'';position:absolute;inset:4px;border-radius:50%;background:var(--gold)}
+.ph .no{font:500 20px/1 var(--mono);color:var(--gold);letter-spacing:.14em}
+.ph h3{font:700 40px/1.3 var(--serif);color:var(--cream);margin:14px 0 24px}
+.ph ul.dash li{font-size:23px;margin-bottom:12px;padding-left:34px}
+.band{margin-top:auto;display:grid;grid-template-columns:520px 1fr;align-items:center;gap:60px;padding:40px 56px;border:1px solid rgba(200,168,112,.4);border-left:4px solid var(--gold);background:rgba(200,168,112,.05)}
+.band h3{font:700 40px/1.3 var(--serif);color:var(--cream)}
+.band p{font:400 27px/1.7 var(--sans);color:var(--warm)}
 </style></head><body>
 <div class="edit-hotzone"></div><button class="edit-toggle" id="editToggle">编辑文字 (E)</button>
 <div class="deck-viewport"><main class="deck-stage" id="deckStage">
 <section class="slide dark bare cover">
-<div class="top r"><span>ZHEJIANG HUADONG CONSTRUCTION MANAGEMENT</span><span>MMXXVI</span></div>
 <div class="hero"><div class="k r" style="--d:.3s">竞聘陈述</div>
 <h1 class="r" style="--d:.4s">智慧建造研究院<br><em>副总经理</em></h1><div class="goldrule" style="margin-top:52px"></div>
 <div class="who r" style="--d:.7s">苏竞雯<small>智慧建造研究院　·　工程师　·　新南威尔士大学硕士</small></div></div>
 <div class="toc"><div class="r" style="--d:0.80s"><i>01</i><b>个人简介</b><p>教育背景与六年数字化经历</p></div><div class="r" style="--d:0.94s"><i>02</i><b>工作成绩</b><p>四项代表性工作与亮点</p></div><div class="r" style="--d:1.08s"><i>03</i><b>岗位认知</b><p>岗位职责与竞争优势</p></div><div class="r" style="--d:1.22s"><i>04</i><b>履职思路</b><p>四项职责对应四项举措</p></div></div>
-<div class="bot r" style="--d:1.4s"><span>PERSONAL STATEMENT</span><span data-page></span></div></section>
+<div class="bot r" style="--d:1.4s"><span></span><span data-page></span></div></section>
 <section class="slide dark bare chapter">
 <div class="num r" style="--d:.05s">01</div><div class="rule"></div>
 <h1 class="r" style="--d:.35s">个人简介</h1><div class="sub r" style="--d:.5s">六年多，一直在数字化一线</div></section>
 <section class="slide light">
-<div class="chrome"><span class="sec">01 个人简介</span><span>智慧建造研究院副总经理竞聘 · 苏竞雯</span></div>
+<div class="chrome"><span class="sec">01 个人简介</span></div>
 <div class="body">
 <div class="r" style="--d:0.10s"><div class="kicker">个人基本情况</div><h2>一个数字化项目的全过程，<em>各环节都亲手做过</em></h2></div>
 <div class="cols c2" style="grid-template-columns:0.85fr 1.15fr">
  <div>
-  <div class="r step" style="--d:0.30s"><div class="no">EDUCATION</div><h3>硕士研究生</h3><div class="sub">澳大利亚新南威尔士大学　通信工程　2020</div></div>
-  <div class="r step" style="--d:0.42s" style="--d:.42s;margin-top:20px"><div class="no">TITLE</div><h3>工程师</h3><div class="sub">计算机与应用工程专业</div></div>
-  <div class="r step" style="--d:0.54s" style="--d:.54s;margin-top:20px"><div class="no">EXPERIENCE</div><h3>运维 · 产品 · 研发管理 · 项目负责人</h3><div class="sub">从签合同、做需求、组织研发到验收回款</div></div>
+  <div class="r step" style="--d:0.30s"><div class="no">学历</div><h3>硕士研究生</h3><div class="sub">澳大利亚新南威尔士大学　通信工程　2020</div></div>
+  <div class="r step" style="--d:0.42s" style="--d:.42s;margin-top:20px"><div class="no">职称</div><h3>工程师</h3><div class="sub">计算机与应用工程专业</div></div>
+  <div class="r step" style="--d:0.54s" style="--d:.54s;margin-top:20px"><div class="no">经历</div><h3>运维 · 产品 · 研发管理 · 项目负责人</h3><div class="sub">从签合同、做需求、组织研发到验收回款</div></div>
  </div>
  <div class="vline">
   <div class="r" style="--d:0.50s"><div class="kicker" style="font-size:22px">2020.08 — 2022.10</div>
    <h3 style="font:700 36px/1.4 var(--serif);margin:14px 0 12px">浙江华东工程数字技术有限公司　信息管理部</h3>
    <ul class="dash"><li>院网络运维；院考勤系统、信息化大屏、用车管理、工程建设管理平台等产品设计</li><li>新加坡 CPG 投标管理系统 <b>项目负责人兼产品经理</b></li></ul></div>
   <div class="r" style="--d:0.65s" style="--d:.65s;margin-top:34px"><div class="kicker" style="font-size:22px">2022.11 — 至今</div>
-   <h3 style="font:700 36px/1.4 var(--serif);margin:14px 0 12px">建管公司　智慧建造研究院</h3>
-   <ul class="dash"><li>产品经理 → 产品管理 → <b>部门研发管理</b></li><li>抽蓄建设管理平台基线版本规划与研发</li><li>抽蓄管理数字化提升技术落地；部门在建项目研发统筹</li></ul></div>
+   <h3 style="font:700 36px/1.4 var(--serif);margin:14px 0 12px">浙江华东工程建设管理有限公司　智慧建造研究院</h3>
+   <ul class="dash"><li>产品经理 → 产品管理 → <b>部门研发管理</b></li><li>抽蓄建设管理平台基线版本规划与研发</li><li>抽蓄管理数字化提升技术落地</li><li>部门在建项目研发统筹</li></ul></div>
  </div>
 </div></div>
-<div class="foot"><span>PERSONAL STATEMENT · 2026</span><span data-page></span></div></section>
+<div class="foot"><span></span><span data-page></span></div></section>
 <section class="slide dark bare chapter">
 <div class="num r" style="--d:.05s">02</div><div class="rule"></div>
 <h1 class="r" style="--d:.35s">工作成绩</h1><div class="sub r" style="--d:.5s">四项代表性工作</div><div class="map"><div class="r" style="--d:0.70s"><b>成绩一</b><i>→</i><span><small>抽蓄管理数字化提升</small>任务在线 · 数据看板 · AI 智能体</span></div><div class="r" style="--d:0.82s"><b>成绩二</b><i>→</i><span><small>部门研发统筹</small>10 个在建项目的排期与资源调配</span></div><div class="r" style="--d:0.94s"><b>成绩三</b><i>→</i><span><small>抽蓄管控平台</small>从单个项目到 SaaS 基线版本</span></div><div class="r" style="--d:1.06s"><b>成绩四</b><i>→</i><span><small>新加坡 CPG 项目</small>全流程负责一个海外项目</span></div></div></section>
 <section class="slide dark">
-<div class="chrome"><span class="sec">02 工作成绩</span><span>智慧建造研究院副总经理竞聘 · 苏竞雯</span></div>
+<div class="chrome"><span class="sec">02 工作成绩</span></div>
 <div class="body">
 <div class="r" style="--d:0.10s"><div class="kicker">成绩一 · 负责技术落地</div><h2>抽蓄管理数字化提升：<em>先流程、再数据、后 IT</em></h2></div>
 <div class="cols c3" style="margin-top:44px">
@@ -311,61 +335,46 @@ body.editing [contenteditable]{outline:1px dashed rgba(200,168,112,.6)}
   <ul class="dash"><li><b>项目文档智能填报</b>：读文件，自动填表</li><li><b>P6 与飞书多维表格双向同步</b>：浮时自动写入，现场进度回写 P6</li><li>现场只填一次，不再手工录入</li></ul></div>
 </div>
 <div class="r takeaway" style="--d:1.00s">借助 AI，产品人员和研发人员都能独立完成从需求到交付的全过程</div></div>
-<div class="foot"><span>PERSONAL STATEMENT · 2026</span><span data-page></span></div></section>
+<div class="foot"><span></span><span data-page></span></div></section>
 <section class="slide light">
-<div class="chrome"><span class="sec">02 工作成绩</span><span>智慧建造研究院副总经理竞聘 · 苏竞雯</span></div>
+<div class="chrome"><span class="sec">02 工作成绩</span></div>
 <div class="body">
 <div class="r" style="--d:0.10s"><div class="kicker">成绩二至四</div><h2>统筹研发、规划产品、<em>负责项目履约</em></h2></div>
 <div class="cols c3">
  <div class="r step" style="--d:0.30s"><div class="no">成绩二 · 部门研发统筹</div>
   <div style="display:flex;align-items:baseline;margin:18px 0 6px"><span class="stat" data-count="10">10</span><small style="font:500 26px var(--sans);color:var(--gold);margin-left:10px">个在建项目</small></div>
   <div class="sub">研发排期与开发资源调配</div>
-  <ul class="dash"><li>需求池、排期到人到天、上线单、逾期提醒</li><li>每月统计资源投向，如 8 月赣县抽蓄占 23.6%</li><li>按交付节点定优先级，保障各项目节点</li></ul></div>
+  <ul class="dash"><li>需求池、排期到人到天、上线单、逾期提醒</li><li>每月统计各项目资源投向</li><li>按交付节点定优先级，保障各项目节点</li></ul></div>
  <div class="r step" style="--d:0.45s"><div class="no">成绩三 · 抽蓄管控平台</div>
   <div class="stat" style="margin:18px 0 6px">SaaS</div><div class="sub">多租户、分级授权的基线版本</div>
   <ul class="dash"><li>以永嘉抽蓄业务为基础，提炼共性需求</li><li>应用到建德、家朋等项目</li><li>新项目在基线上配置即可，<b>快速履约</b></li></ul></div>
  <div class="r step" style="--d:0.60s"><div class="no">成绩四 · 新加坡 CPG 项目</div>
   <div class="stat" style="margin:18px 0 6px">CPG</div><div class="sub">投标管理系统　项目负责人兼产品经理</div>
-  <ul class="dash"><li>推进合同签订</li><li>英语环境中与客户确认需求</li><li>四个模块设计、研发、交付，完成<b>验收和回款</b></li></ul></div>
+  <ul class="dash"><li>推进合同签订</li><li>英语环境中与客户确认需求</li><li>系统平台设计、研发、交付，完成<b>验收和回款</b></li></ul></div>
 </div></div>
-<div class="foot"><span>PERSONAL STATEMENT · 2026</span><span data-page></span></div></section>
+<div class="foot"><span></span><span data-page></span></div></section>
 <section class="slide dark bare chapter">
 <div class="num r" style="--d:.05s">03</div><div class="rule"></div>
 <h1 class="r" style="--d:.35s">岗位认知</h1><div class="sub r" style="--d:.5s">岗位职责与竞争优势</div></section>
 <section class="slide dark">
-<div class="chrome"><span class="sec">03 岗位认知</span><span>智慧建造研究院副总经理竞聘 · 苏竞雯</span></div>
+<div class="chrome"><span class="sec">03 岗位认知</span></div>
 <div class="body">
 <div class="r" style="--d:0.10s"><div class="kicker">对岗位职责的认识</div><h2>部门要交出成果，副职要<em>管好事、带好人</em></h2></div>
-<div class="cols c2" style="grid-template-columns:0.72fr 1.28fr;margin-top:44px">
- <div>
-  <div class="r" style="--d:0.30s" class="r"><div class="muted" style="font:500 18px var(--mono);letter-spacing:.1em;color:var(--gold)">部门四项职责 → 三类工作</div></div>
-  <div class="r step" style="--d:0.42s" style="--d:.42s;margin-top:22px"><h3 style="margin-top:0">产品研发</h3><div class="sub">职责 1　研发和应用数字化手段赋能项目管理</div></div>
-  <div class="r step" style="--d:0.54s" style="--d:.54s"><h3 style="margin-top:0">项目履约</h3><div class="sub">职责 2　承担总承包项目数字化子项履约</div></div>
-  <div class="r step" style="--d:0.66s" style="--d:.66s"><h3 style="margin-top:0">服务保障</h3><div class="sub">职责 3、4　信息系统运维；AI 工具赋能和推广</div></div>
- </div>
- <div class="vline r" style="--d:.5s">
-  <table class="grid"><tr><th>岗位职责</th><th>管什么</th><th>做到什么程度</th></tr>
-   <tr><td class="k">管研发</td><td>需求收不收、先做哪个、谁来做、能不能上线</td><td class="m">节点不延期，上线不返工</td></tr>
-   <tr><td class="k">管履约</td><td>数字化子项从启动到收尾的全过程</td><td class="m">按合同交付，按期回款</td></tr>
-   <tr><td class="k">管服务</td><td>AI 工具推广应用；信息系统运行维护</td><td class="m">AI 有人用、用得深；系统稳定</td></tr>
-   <tr><td class="k">带队伍</td><td>团队分工、培养和梯队建设</td><td class="m">骨干能独立负责项目</td></tr></table>
-  <p class="muted" style="font-size:22px;line-height:1.7;margin-top:22px">前三项承接部门职责；人才建设不在部门职责里，却决定部门职责能否完成。</p>
- </div>
-</div></div>
-<div class="foot"><span>PERSONAL STATEMENT · 2026</span><span data-page></span></div></section>
+<div class="m8"><div class="m8head r" style="--d:.2s"><span>部门职责</span><span></span><span>岗位职责</span></div><div class="m8row"><div class="m8l r" style="--d:0.30s"><p>职责一　结合工程总承包项目需求，研发和应用数字化手段赋能项目管理</p></div><div class="m8a r" style="--d:0.42s"><span></span></div><div class="m8r r" style="--d:0.50s"><b>管研发</b><p>需求收不收、先做哪个、谁来做、能不能上线</p></div></div><div class="m8row"><div class="m8l r" style="--d:0.52s"><p>职责二　承担总承包项目数字化子项履约</p></div><div class="m8a r" style="--d:0.64s"><span></span></div><div class="m8r r" style="--d:0.72s"><b>管履约</b><p>数字化子项从启动到收尾的全过程</p></div></div><div class="m8row"><div class="m8l r" style="--d:0.74s"><p>职责三　负责公司信息系统的运行维护</p><p>职责四　负责 AI 工具的生产管理赋能和推广应用</p></div><div class="m8a r" style="--d:0.86s"><span></span></div><div class="m8r r" style="--d:0.94s"><b>管服务</b><p>AI 工具推广应用；信息系统运行维护</p></div></div><div class="m8row m8team"><div class="m8l r" style="--d:0.96s"><p>四项职责都要靠团队落地</p></div><div class="m8a r" style="--d:1.08s"><span></span></div><div class="m8r r" style="--d:1.16s"><b>带队伍</b><p>团队分工、培养和梯队建设</p></div></div></div></div>
+<div class="foot"><span></span><span data-page></span></div></section>
 <section class="slide light">
-<div class="chrome"><span class="sec">03 岗位认知</span><span>智慧建造研究院副总经理竞聘 · 苏竞雯</span></div>
+<div class="chrome"><span class="sec">03 岗位认知</span></div>
 <div class="body">
 <div class="r" style="--d:0.10s"><div class="kicker">竞争优势</div><h2>五项优势，对应<em>四项岗位职责</em></h2></div>
 <div class="r" style="--d:.25s;margin-top:48px">
 <table class="grid"><tr><th style="width:250px">我的优势</th><th class="c" style="width:150px">管研发</th><th class="c" style="width:150px">管履约</th><th class="c" style="width:150px">管服务</th><th class="c" style="width:150px">带队伍</th><th>依据</th></tr><tr class="r" style="--d:0.40s"><td class="k">懂产品设计</td><td class="c"><span class="dot"></span></td><td class="c"><span class="dot off"></span></td><td class="c"><span class="dot off"></span></td><td class="c"><span class="dot off"></span></td><td class="m">抽蓄管控平台 SaaS 基线；120+ 表单落地</td></tr><tr class="r" style="--d:0.52s"><td class="k">懂团队管理</td><td class="c"><span class="dot off"></span></td><td class="c"><span class="dot"></span></td><td class="c"><span class="dot off"></span></td><td class="c"><span class="dot"></span></td><td class="m">10 个在建项目排期调配；CPG 全流程负责</td></tr><tr class="r" style="--d:0.64s"><td class="k">懂开发技术</td><td class="c"><span class="dot"></span></td><td class="c"><span class="dot"></span></td><td class="c"><span class="dot"></span></td><td class="c"><span class="dot off"></span></td><td class="m">通信工程硕士、工程师；系统接口打通方案</td></tr><tr class="r" style="--d:0.76s"><td class="k">懂 AI</td><td class="c"><span class="dot off"></span></td><td class="c"><span class="dot off"></span></td><td class="c"><span class="dot"></span></td><td class="c"><span class="dot"></span></td><td class="m">自主开发文档智能填报、P6 双向同步</td></tr><tr class="r" style="--d:0.88s"><td class="k">英语好</td><td class="c"><span class="dot off"></span></td><td class="c"><span class="dot"></span></td><td class="c"><span class="dot"></span></td><td class="c"><span class="dot off"></span></td><td class="m">英语环境完成 CPG 项目；支撑海外拓展</td></tr></table></div>
 <div class="r takeaway" style="--d:1.10s">产品和技术管好研发与履约，AI 做好推广、带团队提效</div></div>
-<div class="foot"><span>PERSONAL STATEMENT · 2026</span><span data-page></span></div></section>
+<div class="foot"><span></span><span data-page></span></div></section>
 <section class="slide dark bare chapter">
 <div class="num r" style="--d:.05s">04</div><div class="rule"></div>
 <h1 class="r" style="--d:.35s">履职思路</h1><div class="sub r" style="--d:.5s">四项职责，四项举措</div><div class="map"><div class="r" style="--d:0.70s"><b>管研发</b><i>→</i><span><small>举措一</small>借助 AI 提高研发团队效率</span></div><div class="r" style="--d:0.82s"><b>管履约</b><i>→</i><span><small>举措二</small>落实公司 B42 数字化履约流程</span></div><div class="r" style="--d:0.94s"><b>管服务</b><i>→</i><span><small>举措三</small>做深 AI 场景，统一 AI 规划，守住运维底线</span></div><div class="r" style="--d:1.06s"><b>带队伍</b><i>→</i><span><small>举措四</small>在项目和 AI 实践中培养人</span></div></div></section>
 <section class="slide light">
-<div class="chrome"><span class="sec">04 履职思路</span><span>智慧建造研究院副总经理竞聘 · 苏竞雯</span></div>
+<div class="chrome"><span class="sec">04 履职思路</span></div>
 <div class="body">
 <div class="r" style="--d:0.10s"><div class="kicker">举措一 · 管研发</div><h2>借助 AI，<em>同样的人交付更多成果</em></h2></div>
 <div class="cols c4" style="flex:none;margin-top:48px"><div class="r step" style="--d:0.30s"><div class="no">01</div><h3>产品</h3><ul class="dash" style="margin-top:14px"><li>AI 生成需求文档初稿和可点击原型</li><li class="muted">产品经理专注业务规则与验收标准</li></ul></div><div class="r step" style="--d:0.42s"><div class="no">02</div><h3>开发</h3><ul class="dash" style="margin-top:14px"><li>AI 编程工具生成重复性代码</li><li class="muted">开发人员负责架构与代码审查</li></ul></div><div class="r step" style="--d:0.54s"><div class="no">03</div><h3>测试</h3><ul class="dash" style="margin-top:14px"><li>AI 生成测试用例和自动化脚本</li><li class="muted">回归测试自动执行</li></ul></div><div class="r step" style="--d:0.66s"><div class="no">04</div><h3>交付运维</h3><ul class="dash" style="margin-top:14px"><li>AI 生成操作手册和培训材料</li><li class="muted">知识库问答机器人先答疑</li></ul></div></div>
@@ -374,19 +383,16 @@ body.editing [contenteditable]{outline:1px dashed rgba(200,168,112,.6)}
  <div class="r" style="--d:1.02s"><h3 style="font:700 30px/1.3 var(--serif)">能配置的不开发</h3><p class="muted" style="font-size:22px;line-height:1.7;margin-top:8px">平台能配置的需求不做定制开发</p></div>
  <div class="r" style="--d:1.14s"><h3 style="font:700 30px/1.3 var(--serif)">培养一专多能</h3><p class="muted" style="font-size:22px;line-height:1.7;margin-top:8px">产品会用 AI 做简单功能，人员调配更灵活</p></div>
 </div></div>
-<div class="foot"><span>PERSONAL STATEMENT · 2026</span><span data-page></span></div></section>
+<div class="foot"><span></span><span data-page></span></div></section>
 <section class="slide dark">
-<div class="chrome"><span class="sec">04 履职思路</span><span>智慧建造研究院副总经理竞聘 · 苏竞雯</span></div>
+<div class="chrome"><span class="sec">04 履职思路</span></div>
 <div class="body">
 <div class="r" style="--d:0.10s"><div class="kicker">举措二 · 管履约</div><h2>落实公司 <em>B42 数字化履约流程</em></h2></div>
-<div class="cols c5" style="flex:none;gap:36px;margin-top:48px"><div class="r step" style="--d:0.30s"><div class="no">B421</div><h3>项目启动</h3><p style="font:400 22px/1.7 var(--sans);color:var(--muted-d);margin-top:12px">分级、组队、合同和风险交底；外部启动会明确验收标准和变更机制；质量门审查</p></div><div class="r step" style="--d:0.42s"><div class="no">B422</div><h3>项目计划</h3><p style="font:400 22px/1.7 var(--sans);color:var(--muted-d);margin-top:12px">WBS 和实施性进度计划；质量、成本等配套计划</p></div><div class="r step" style="--d:0.54s"><div class="no">B423</div><h3>项目实施</h3><p style="font:400 22px/1.7 var(--sans);color:var(--muted-d);margin-top:12px">需求方案业主确认后再开发；需求池排期；变更先评估；按节点收款</p></div><div class="r step" style="--d:0.66s"><div class="no">B424</div><h3>项目验收</h3><p style="font:400 22px/1.7 var(--sans);color:var(--muted-d);margin-top:12px">验收策划、资料归档、总体验收</p></div><div class="r step" style="--d:0.78s"><div class="no">B425</div><h3>项目收尾</h3><p style="font:400 22px/1.7 var(--sans);color:var(--muted-d);margin-top:12px">召开总结会，沉淀方案和模板</p></div></div>
-<div class="cols c2" style="flex:none;margin-top:auto;padding-top:30px;border-top:1px solid var(--bd)">
- <div class="r" style="--d:1.00s"><h3 style="font:700 32px/1.3 var(--serif);color:var(--cream)">流程配置成任务模板</h3><p style="font-size:23px;line-height:1.7;color:var(--muted-d);margin-top:8px">新项目启动自动生成任务，明确责任人和完成时间</p></div>
- <div class="r" style="--d:1.15s"><h3 style="font:700 32px/1.3 var(--serif);color:var(--cream)">履约情况用数据说话</h3><p style="font-size:23px;line-height:1.7;color:var(--muted-d);margin-top:8px">部门履约看板，每周对着看板开会；<span class="hl">无系统不工作、无系统不汇报</span>，智慧院先做到</p></div>
-</div></div>
-<div class="foot"><span>PERSONAL STATEMENT · 2026</span><span data-page></span></div></section>
+<div class="flow5"><div class="fline"></div><div class="ph r" style="--d:0.35s"><span class="nd"></span><div class="no">B421</div><h3>项目启动</h3><ul class="dash"><li>分级、组队，合同和风险交底</li><li>外部启动会明确验收标准和变更机制</li><li>质量门审查</li></ul></div><div class="ph r" style="--d:0.50s"><span class="nd"></span><div class="no">B422</div><h3>项目计划</h3><ul class="dash"><li>WBS 和实施性进度计划</li><li>质量、成本等配套计划</li></ul></div><div class="ph r" style="--d:0.65s"><span class="nd"></span><div class="no">B423</div><h3>项目实施</h3><ul class="dash"><li>需求方案业主确认后再开发</li><li>需求池排期，变更先评估</li><li>按节点收款</li></ul></div><div class="ph r" style="--d:0.80s"><span class="nd"></span><div class="no">B424</div><h3>项目验收</h3><ul class="dash"><li>验收策划</li><li>资料归档</li><li>总体验收</li></ul></div><div class="ph r" style="--d:0.95s"><span class="nd"></span><div class="no">B425</div><h3>项目收尾</h3><ul class="dash"><li>召开总结会</li><li>沉淀方案和模板</li></ul></div></div>
+<div class="band r" style="--d:1.2s"><h3>履约情况用数据说话</h3><p>部门履约看板，每周对着看板开会<br><span class="hl">无系统不工作、无系统不汇报</span>，智慧院先做到</p></div></div>
+<div class="foot"><span></span><span data-page></span></div></section>
 <section class="slide light">
-<div class="chrome"><span class="sec">04 履职思路</span><span>智慧建造研究院副总经理竞聘 · 苏竞雯</span></div>
+<div class="chrome"><span class="sec">04 履职思路</span></div>
 <div class="body">
 <div class="r" style="--d:0.10s"><div class="kicker">举措三 · 管服务</div><h2>AI 应用<em>做深、做统一</em>，系统运维守底线</h2></div>
 <div class="cols c3">
@@ -397,13 +403,13 @@ body.editing [contenteditable]{outline:1px dashed rgba(200,168,112,.6)}
  <div class="r step" style="--d:0.60s"><div class="no">系统运维</div><h3>守住稳定运行底线</h3>
   <ul class="dash" style="margin-top:14px"><li>按系统建台账，明确责任人和响应时限</li><li>故障有记录、有复盘</li><li>知识库问答减少运维占用研发资源</li></ul></div>
 </div></div>
-<div class="foot"><span>PERSONAL STATEMENT · 2026</span><span data-page></span></div></section>
+<div class="foot"><span></span><span data-page></span></div></section>
 <section class="slide dark">
-<div class="chrome"><span class="sec">04 履职思路</span><span>智慧建造研究院副总经理竞聘 · 苏竞雯</span></div>
+<div class="chrome"><span class="sec">04 履职思路</span></div>
 <div class="body">
 <div class="r" style="--d:0.10s"><div class="kicker">举措四 · 带队伍</div><h2>在<em>项目和 AI 实践</em>中培养人</h2></div>
 <div class="cols c2" style="row-gap:40px;column-gap:80px;align-content:center"><div class="r step" style="--d:0.30s"><div class="no">01</div><h3>在项目里压担子</h3><p style="font:400 25px/1.7 var(--sans);color:var(--muted-d);margin-top:8px">骨干轮流担任项目负责人，学会管进度、管质量、管客户</p></div><div class="r step" style="--d:0.42s"><div class="no">02</div><h3>AI 作为基本功</h3><p style="font:400 25px/1.7 var(--sans);color:var(--muted-d);margin-top:8px">内部培训和经验分享，产品、开发、测试都会用 AI</p></div><div class="r step" style="--d:0.54s"><div class="no">03</div><h3>研发人员懂业务</h3><p style="font:400 25px/1.7 var(--sans);color:var(--muted-d);margin-top:8px">到项目现场了解业务、参与流程梳理，减少返工</p></div><div class="r step" style="--d:0.66s"><div class="no">04</div><h3>经验留在团队里</h3><p style="font:400 25px/1.7 var(--sans);color:var(--muted-d);margin-top:8px">项目收尾做总结，方案和模板进团队知识库</p></div></div></div>
-<div class="foot"><span>PERSONAL STATEMENT · 2026</span><span data-page></span></div></section>
+<div class="foot"><span></span><span data-page></span></div></section>
 <section class="slide dark bare end">
 <div class="qm r">「</div>
 <div class="quote r" style="--d:.25s">如有机会担任这个岗位，我会协助部门负责人，把<em>这四件事</em>一件一件落到实处</div>
