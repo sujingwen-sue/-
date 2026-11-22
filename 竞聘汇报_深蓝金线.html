@@ -161,7 +161,7 @@ svg {
 .slide{font-family:var(--sans);padding:72px 140px 64px;display:grid;grid-template-rows:auto 1fr auto}
 .slide.dark{background:var(--navy);color:var(--warm);
   background-image:linear-gradient(rgba(255,255,255,.028) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.028) 1px,transparent 1px);background-size:80px 80px}
-.slide.light{background:var(--cream);color:var(--ink)}
+.slide.light{background:#E8ECF2;color:var(--ink);--gold:#8C6A2F;--bl:#C6CDD8;--muted-l:#4A5468}
 .slide.bare{display:block;padding:0}
 
 /* ---------- chrome：顶栏 / 底栏 ---------- */
@@ -286,6 +286,7 @@ body.editing [contenteditable]{outline:1px dashed rgba(200,168,112,.6)}
 .band{margin-top:auto;display:grid;grid-template-columns:520px 1fr;align-items:center;gap:60px;padding:40px 56px;border:1px solid rgba(200,168,112,.4);border-left:4px solid var(--gold);background:rgba(200,168,112,.05)}
 .band h3{font:700 40px/1.3 var(--serif);color:var(--cream)}
 .s13 ul.dash li{font-size:29px;margin-bottom:24px} .s13.cols .step h3{font-size:46px;margin-bottom:12px}
+.s14 ul.dash li{font-size:27px;margin-bottom:20px} .s14 .step h3{font-size:40px}
 .band p{font:400 27px/1.7 var(--sans);color:var(--warm)}
 </style></head><body>
 <div class="edit-hotzone"></div><button class="edit-toggle" id="editToggle">编辑文字 (E)</button>
@@ -373,7 +374,7 @@ body.editing [contenteditable]{outline:1px dashed rgba(200,168,112,.6)}
 <div class="foot"><span></span><span data-page></span></div></section>
 <section class="slide dark bare chapter">
 <div class="num r" style="--d:.05s">04</div><div class="rule"></div>
-<h1 class="r" style="--d:.35s">履职思路</h1><div class="sub r" style="--d:.5s">四项职责，四项举措</div><div class="map"><div class="r" style="--d:0.70s"><b>管研发</b><i>→</i><span><small>举措一</small>借助 AI 提高研发团队效率</span></div><div class="r" style="--d:0.82s"><b>管履约</b><i>→</i><span><small>举措二</small>落实公司 B42 数字化履约流程</span></div><div class="r" style="--d:0.94s"><b>管服务</b><i>→</i><span><small>举措三</small>做深 AI 场景，守住运维底线</span></div><div class="r" style="--d:1.06s"><b>带队伍</b><i>→</i><span><small>举措四</small>在项目和 AI 实践中培养人</span></div></div></section>
+<h1 class="r" style="--d:.35s">履职思路</h1><div class="sub r" style="--d:.5s">四项职责，四项举措</div><div class="map"><div class="r" style="--d:0.70s"><b>管研发</b><i>→</i><span><small>举措一</small>借助 AI 提高研发团队效率</span></div><div class="r" style="--d:0.82s"><b>管履约</b><i>→</i><span><small>举措二</small>落实公司 B42 数字化履约流程</span></div><div class="r" style="--d:0.94s"><b>管服务</b><i>→</i><span><small>举措三</small>做深 AI 场景，守住运维底线</span></div><div class="r" style="--d:1.06s"><b>带队伍</b><i>→</i><span><small>举措四</small>提效率、调动积极性、探索新技术</span></div></div></section>
 <section class="slide light">
 <div class="chrome"><span class="sec">04 履职思路</span></div>
 <div class="body">
@@ -406,8 +407,8 @@ body.editing [contenteditable]{outline:1px dashed rgba(200,168,112,.6)}
 <section class="slide dark">
 <div class="chrome"><span class="sec">04 履职思路</span></div>
 <div class="body">
-<div class="r" style="--d:0.10s"><div class="kicker">举措四 · 带队伍</div><h2>在<em>项目和 AI 实践</em>中培养人</h2></div>
-<div class="cols c2" style="row-gap:40px;column-gap:80px;align-content:center"><div class="r step" style="--d:0.30s"><div class="no">01</div><h3>在项目里压担子</h3><p style="font:400 25px/1.7 var(--sans);color:var(--muted-d);margin-top:8px">骨干轮流担任项目负责人，学会管进度、管质量、管客户</p></div><div class="r step" style="--d:0.42s"><div class="no">02</div><h3>AI 作为基本功</h3><p style="font:400 25px/1.7 var(--sans);color:var(--muted-d);margin-top:8px">内部培训和经验分享，产品、开发、测试都会用 AI</p></div><div class="r step" style="--d:0.54s"><div class="no">03</div><h3>研发人员懂业务</h3><p style="font:400 25px/1.7 var(--sans);color:var(--muted-d);margin-top:8px">到项目现场了解业务、参与流程梳理，减少返工</p></div><div class="r step" style="--d:0.66s"><div class="no">04</div><h3>经验留在团队里</h3><p style="font:400 25px/1.7 var(--sans);color:var(--muted-d);margin-top:8px">项目收尾做总结，方案和模板进团队知识库</p></div></div></div>
+<div class="r" style="--d:0.10s"><div class="kicker">举措四 · 带队伍</div><h2>带出一支<em>高效、有干劲、敢创新</em>的队伍</h2></div>
+<div class="cols c3 s14" style="column-gap:80px;margin-top:64px"><div class="r step" style="--d:0.30s"><div class="no">01 · 提高工作效率</div><h3>用工具和模板减少重复劳动</h3><ul class="dash" style="margin-top:18px"><li>AI 工具人人会用</li><li>常用的需求文档、方案、测试用例做成模板</li><li>提示词库、技能库全组共用，一人摸索、全组复用</li></ul></div><div class="r step" style="--d:0.45s"><div class="no">02 · 提高工作积极性</div><h3>让每个人的贡献看得见</h3><ul class="dash" style="margin-top:18px"><li>任务和成果在看板上公开</li><li>明确工作目标，落实 OKR 考核制度</li></ul></div><div class="r step" style="--d:0.60s"><div class="no">03 · 积极探索新技术</div><h3>鼓励小步试新技术</h3><ul class="dash" style="margin-top:18px"><li>设立 AI 创新小课题，员工自主申报，试好用的转为正式功能或推广到项目</li><li>每月一次技术分享，新工具先在内部试用</li></ul></div></div></div>
 <div class="foot"><span></span><span data-page></span></div></section>
 <section class="slide dark bare end">
 <div class="qm r">「</div>
