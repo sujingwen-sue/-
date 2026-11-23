@@ -165,7 +165,7 @@ svg {
 .slide.bare{display:block;padding:0}
 
 /* ---------- chrome：顶栏 / 底栏 ---------- */
-.chrome,.foot{display:flex;justify-content:space-between;font:500 16px/1 var(--mono);letter-spacing:.14em}
+.chrome,.foot{display:flex;justify-content:space-between;font:500 21px/1 var(--mono);letter-spacing:.14em}
 .chrome{padding-bottom:20px;border-bottom:1px solid var(--bd)} .foot{padding-top:20px}
 .light .chrome,.light .foot{border-color:var(--bl)}
 .dark .chrome,.dark .foot{color:var(--muted-d)} .light .chrome,.light .foot{color:var(--muted-l)}
@@ -173,16 +173,16 @@ svg {
 .body{padding:44px 0 36px;display:flex;flex-direction:column;min-height:0}
 
 /* ---------- 文字层级 ---------- */
-.kicker{font:500 20px/1 var(--mono);color:var(--gold);letter-spacing:.06em;display:flex;align-items:center;gap:18px}
+.kicker{font:500 26px/1 var(--mono);color:var(--gold);letter-spacing:.06em;display:flex;align-items:center;gap:18px}
 .kicker::after{content:'';width:36px;height:1px;background:var(--gold)}
 h2{font:700 58px/1.25 var(--serif);margin:22px 0 0}
 h2 em,h1 em,.quote em{font-style:normal;color:var(--gold)}
 .dark h2{color:var(--cream)}
-.lead{font:400 28px/1.8 var(--sans)} .dark .lead{color:var(--muted-d)} .light .lead{color:var(--muted-l)}
+.lead{font:400 33px/1.8 var(--sans)} .dark .lead{color:var(--muted-d)} .light .lead{color:var(--muted-l)}
 .stat{font:600 96px/1 var(--serif);color:var(--gold)}
-.stat small{font:500 26px/1 var(--sans);margin-left:10px}
+.stat small{font:500 31px/1 var(--sans);margin-left:10px}
 ul.dash{list-style:none}
-ul.dash li{position:relative;padding-left:40px;font:400 24px/1.6 var(--sans);margin-bottom:14px}
+ul.dash li{position:relative;padding-left:40px;font:400 28px/1.6 var(--sans);margin-bottom:14px}
 ul.dash li::before{content:'—';position:absolute;left:0;color:var(--gold);font-family:var(--mono)}
 .dark ul.dash li{color:var(--warm)}
 ul.dash li b{font-weight:700} .dark ul.dash li b{color:var(--cream)}
@@ -193,20 +193,20 @@ ul.dash li b{font-weight:700} .dark ul.dash li b{color:var(--cream)}
 .cols{display:grid;gap:56px;margin-top:48px;flex:1;min-height:0}
 .c2{grid-template-columns:1fr 1fr} .c3{grid-template-columns:repeat(3,1fr)} .c4{grid-template-columns:repeat(4,1fr)} .c5{grid-template-columns:repeat(5,1fr)}
 .step{border-top:2px solid var(--gold);padding-top:26px}
-.step .no{font:500 18px/1 var(--mono);color:var(--gold);letter-spacing:.14em}
-.step h3{font:700 36px/1.3 var(--serif);margin:14px 0 6px} .dark .step h3{color:var(--cream)}
-.step .sub{font:400 21px/1.5 var(--sans);margin-bottom:22px} .dark .step .sub{color:var(--muted-d)} .light .step .sub{color:var(--muted-l)}
+.step .no{font:500 23px/1 var(--mono);color:var(--gold);letter-spacing:.14em}
+.step h3{font:700 39px/1.3 var(--serif);margin:14px 0 6px} .dark .step h3{color:var(--cream)}
+.step .sub{font:400 25px/1.5 var(--sans);margin-bottom:22px} .dark .step .sub{color:var(--muted-d)} .light .step .sub{color:var(--muted-l)}
 .vline{border-left:1px solid var(--bd);padding-left:48px} .light .vline{border-color:var(--bl)}
-.takeaway{margin-top:auto;padding-top:26px;border-top:1px solid var(--bd);font:600 34px/1.5 var(--serif);color:var(--cream);display:flex;gap:24px;align-items:baseline}
+.takeaway{margin-top:auto;padding-top:26px;border-top:1px solid var(--bd);font:600 37px/1.5 var(--serif);color:var(--cream);display:flex;gap:24px;align-items:baseline}
 .light .takeaway{border-color:var(--bl);color:var(--ink)}
 .takeaway::before{content:'「';color:var(--gold)}
 
 /* ---------- 表格 ---------- */
-table.grid{width:100%;border-collapse:collapse;font:400 23px/1.55 var(--sans)}
-table.grid th{font:500 17px/1 var(--mono);letter-spacing:.1em;text-align:left;padding:0 20px 16px 0;color:var(--gold);border-bottom:1px solid var(--bd)}
+table.grid{width:100%;border-collapse:collapse;font:400 27px/1.55 var(--sans)}
+table.grid th{font:500 22px/1 var(--mono);letter-spacing:.1em;text-align:left;padding:0 20px 16px 0;color:var(--gold);border-bottom:1px solid var(--bd)}
 table.grid td{padding:20px 20px 20px 0;border-bottom:1px solid var(--bd);vertical-align:top}
 .light table.grid th,.light table.grid td{border-color:var(--bl)}
-table.grid td.k{font:700 32px/1.3 var(--serif);white-space:nowrap} .dark table.grid td.k{color:var(--cream)}
+table.grid td.k{font:700 35px/1.3 var(--serif);white-space:nowrap} .dark table.grid td.k{color:var(--cream)}
 table.grid td.m{color:var(--muted-d)} .light table.grid td.m{color:var(--muted-l)}
 .dot{display:inline-block;width:18px;height:18px;border-radius:50%;background:var(--gold)}
 .dot.off{background:transparent;border:1px solid var(--bl)}
@@ -215,35 +215,35 @@ td.c,th.c{text-align:center!important}
 /* =========================================================
    COVER / CHAPTER / END — 无顶栏底栏的大字页
    ========================================================= */
-.cover .top{position:absolute;left:140px;right:140px;top:80px;display:flex;justify-content:space-between;padding-bottom:22px;border-bottom:1px solid rgba(200,168,112,.28);font:500 18px/1 var(--mono);letter-spacing:.14em;color:var(--muted-d)}
+.cover .top{position:absolute;left:140px;right:140px;top:80px;display:flex;justify-content:space-between;padding-bottom:22px;border-bottom:1px solid rgba(200,168,112,.28);font:500 23px/1 var(--mono);letter-spacing:.14em;color:var(--muted-d)}
 .cover .hero{position:absolute;left:140px;top:240px;width:1120px}
-.cover .k{font:500 26px/1 var(--serif);color:var(--gold);letter-spacing:.3em}
+.cover .k{font:500 31px/1 var(--serif);color:var(--gold);letter-spacing:.3em}
 .cover h1{font:700 108px/1.25 var(--serif);color:var(--cream);margin-top:40px}
 .goldrule{height:1px;background:var(--gold);width:0;transition:width 1.4s var(--ease) .6s}
 .visible .goldrule{width:520px}
-.cover .who{font:500 36px/1.6 var(--serif);color:var(--cream);margin-top:40px}
-.cover .who small{display:block;font:400 23px/1.6 var(--sans);color:var(--muted-d);margin-top:8px}
+.cover .who{font:500 39px/1.6 var(--serif);color:var(--cream);margin-top:40px}
+.cover .who small{display:block;font:400 27px/1.6 var(--sans);color:var(--muted-d);margin-top:8px}
 .cover .toc{position:absolute;right:140px;top:250px;width:440px;border-left:1px solid rgba(200,168,112,.28);padding-left:56px}
 .toc div{padding:24px 0;border-bottom:1px solid rgba(200,168,112,.28)} .toc div:last-child{border:0}
 .toc i{font:italic 400 46px/1 'Source Serif 4',serif;color:var(--gold);margin-right:22px;vertical-align:-4px}
-.toc b{font:600 32px/1 var(--serif);color:var(--cream)}
-.toc p{font:400 19px/1.5 var(--sans);color:var(--muted-d);margin:12px 0 0 74px}
-.cover .bot{position:absolute;left:140px;right:140px;bottom:70px;display:flex;justify-content:space-between;padding-top:22px;font:500 18px/1 var(--mono);letter-spacing:.14em;color:var(--muted-d)}
+.toc b{font:600 35px/1 var(--serif);color:var(--cream)}
+.toc p{font:400 25px/1.5 var(--sans);color:var(--muted-d);margin:12px 0 0 74px}
+.cover .bot{position:absolute;left:140px;right:140px;bottom:70px;display:flex;justify-content:space-between;padding-top:22px;font:500 23px/1 var(--mono);letter-spacing:.14em;color:var(--muted-d)}
 
 .chapter .num{position:absolute;left:140px;top:250px;font:italic 400 220px/1 'Source Serif 4',serif;color:var(--gold)}
 .chapter .rule{position:absolute;left:150px;top:520px;height:1px;width:0;background:var(--gold);transition:width 1s var(--ease) .3s}
 .visible.chapter .rule{width:36px}
 .chapter h1{position:absolute;left:140px;top:570px;font:700 110px/1.2 var(--serif);color:var(--cream)}
-.chapter .sub{position:absolute;left:144px;top:720px;font:400 32px/1.6 var(--sans);color:var(--muted-d)}
+.chapter .sub{position:absolute;left:144px;top:720px;font:400 35px/1.6 var(--sans);color:var(--muted-d)}
 .chapter .map{position:absolute;right:140px;top:200px;width:860px;border-left:1px solid var(--bd);padding-left:56px}
 .chapter .map div{display:grid;grid-template-columns:150px 50px 1fr;align-items:baseline;padding:28px 0;border-bottom:1px solid var(--bd)}
 .chapter .map div:last-child{border:0}
-.chapter .map b{font:700 34px/1.3 var(--serif);color:var(--cream)} .chapter .map i{font-style:normal;color:var(--gold);font-family:var(--mono)}
-.chapter .map span{font:400 27px/1.5 var(--sans);color:var(--warm)} .chapter .map small{display:block;font:700 34px/1.3 var(--serif);color:var(--gold);margin-bottom:10px}
+.chapter .map b{font:700 37px/1.3 var(--serif);color:var(--cream)} .chapter .map i{font-style:normal;color:var(--gold);font-family:var(--mono)}
+.chapter .map span{font:400 32px/1.5 var(--sans);color:var(--warm)} .chapter .map small{display:block;font:700 37px/1.3 var(--serif);color:var(--gold);margin-bottom:10px}
 
 .end .quote{position:absolute;left:140px;right:300px;top:300px;font:600 76px/1.45 var(--serif);color:var(--cream)}
 .end .qm{position:absolute;left:120px;top:150px;font:300 200px/1 var(--serif);color:var(--gold)}
-.end .thanks{position:absolute;left:144px;bottom:120px;font:400 30px/1.6 var(--sans);color:var(--muted-d)}
+.end .thanks{position:absolute;left:144px;bottom:120px;font:400 35px/1.6 var(--sans);color:var(--muted-d)}
 .end .thanks b{display:block;font:700 64px/1.3 var(--serif);color:var(--gold);margin-top:10px}
 
 /* =========================================================
@@ -262,32 +262,32 @@ td.c,th.c{text-align:center!important}
 .edit-toggle.show,.edit-toggle.active{opacity:1;pointer-events:auto}
 body.editing [contenteditable]{outline:1px dashed rgba(200,168,112,.6)}
 .m8{margin-top:44px;flex:1;display:flex;flex-direction:column}
-.m8head{display:grid;grid-template-columns:880px 110px 1fr;font:500 19px/1 var(--sans);letter-spacing:.2em;color:var(--gold);padding-bottom:18px;border-bottom:1px solid var(--gold)}
+.m8head{display:grid;grid-template-columns:880px 110px 1fr;font:500 25px/1 var(--sans);letter-spacing:.2em;color:var(--gold);padding-bottom:18px;border-bottom:1px solid var(--gold)}
 .m8row{display:grid;grid-template-columns:880px 110px 1fr;align-items:center;border-bottom:1px solid var(--bd);flex:1}
 .m8row.m8team{border-top:1px dashed rgba(200,168,112,.45)}
-.m8l p{font:400 25px/1.55 var(--sans);color:var(--warm);margin:6px 0}
+.m8l{padding-right:30px} .m8l p{font:400 30px/1.55 var(--sans);color:var(--warm);margin:6px 0}
 .m8team .m8l p{color:var(--muted-d);font-style:normal}
 .m8a{display:flex;align-items:center;padding-right:20px}
 .m8a span{position:relative;display:block;height:2px;width:0;background:var(--gold);transition:width .7s var(--ease);transition-delay:calc(var(--d) + .2s)}
 .visible .m8a span{width:70px}
 .m8a span::after{content:'';position:absolute;right:-2px;top:-6px;border-left:12px solid var(--gold);border-top:7px solid transparent;border-bottom:7px solid transparent}
-.m8r{display:flex;align-items:baseline;gap:30px}
-.m8r b{font:700 40px/1.3 var(--serif);color:var(--cream);white-space:nowrap}
-.m8r p{font:400 23px/1.5 var(--sans);color:var(--muted-d)}
-.flow5{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:40px;margin-top:70px}
+.m8r{display:flex;flex-direction:column;align-items:flex-start;gap:6px}
+.m8r b{font:700 43px/1.3 var(--serif);color:var(--cream);white-space:nowrap}
+.m8r p{font:400 27px/1.5 var(--sans);color:var(--muted-d)}
+.flow5{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:40px;margin-top:50px}
 .flow5 .fline{position:absolute;left:0;right:0;top:9px;height:2px;background:var(--gold);transform-origin:left;transform:scaleX(0);transition:transform 1.4s var(--ease) .25s}
 .visible .flow5 .fline{transform:scaleX(1)}
 .ph{position:relative;padding-top:48px}
 .ph .nd{position:absolute;top:0;left:0;width:20px;height:20px;border-radius:50%;background:var(--navy);border:2px solid var(--gold)}
 .ph .nd::after{content:'';position:absolute;inset:4px;border-radius:50%;background:var(--gold)}
-.ph .no{font:500 20px/1 var(--mono);color:var(--gold);letter-spacing:.14em}
-.ph h3{font:700 40px/1.3 var(--serif);color:var(--cream);margin:14px 0 24px}
-.ph ul.dash li{font-size:23px;margin-bottom:12px;padding-left:34px}
+.ph .no{font:500 26px/1 var(--mono);color:var(--gold);letter-spacing:.14em}
+.ph h3{font:700 43px/1.3 var(--serif);color:var(--cream);margin:14px 0 24px}
+.ph ul.dash li{font-size:27px;margin-bottom:12px;padding-left:34px}
 .band{margin-top:auto;display:grid;grid-template-columns:520px 1fr;align-items:center;gap:60px;padding:40px 56px;border:1px solid rgba(200,168,112,.4);border-left:4px solid var(--gold);background:rgba(200,168,112,.05)}
-.band h3{font:700 40px/1.3 var(--serif);color:var(--cream)}
-.s13 ul.dash li{font-size:29px;margin-bottom:24px} .s13.cols .step h3{font-size:46px;margin-bottom:12px}
-.s14 ul.dash li{font-size:27px;margin-bottom:20px} .s14 .step h3{font-size:40px}
-.band p{font:400 27px/1.7 var(--sans);color:var(--warm)}
+.band h3{font:700 43px/1.3 var(--serif);color:var(--cream)}
+.s13 ul.dash li{font-size:34px;margin-bottom:24px} .s13.cols .step h3{font-size:50px;margin-bottom:12px}
+.s14 ul.dash li{font-size:32px;margin-bottom:20px} .s14 .step h3{font-size:38px}
+.band p{font:400 32px/1.7 var(--sans);color:var(--warm)}
 </style></head><body>
 <div class="edit-hotzone"></div><button class="edit-toggle" id="editToggle">编辑文字 (E)</button>
 <div class="deck-viewport"><main class="deck-stage" id="deckStage">
@@ -311,11 +311,11 @@ body.editing [contenteditable]{outline:1px dashed rgba(200,168,112,.6)}
   <div class="r step" style="--d:0.54s" style="--d:.54s;margin-top:20px"><div class="no">经历</div><h3>运维 · 产品 · 研发管理 · 项目负责人</h3><div class="sub">从签合同、做需求、组织研发到验收回款</div></div>
  </div>
  <div class="vline">
-  <div class="r" style="--d:0.50s"><div class="kicker" style="font-size:22px">2020.08 — 2022.10</div>
-   <h3 style="font:700 36px/1.4 var(--serif);margin:14px 0 12px">浙江华东工程数字技术有限公司　信息管理部</h3>
+  <div class="r" style="--d:0.50s"><div class="kicker" style="font-size:26px">2020.08 — 2022.10</div>
+   <h3 style="font:700 39px/1.4 var(--serif);margin:14px 0 12px">浙江华东工程数字技术有限公司　信息管理部</h3>
    <ul class="dash"><li>院网络运维；院考勤系统、信息化大屏、用车管理、工程建设管理平台等产品设计</li><li>新加坡 CPG 投标管理系统 <b>项目负责人兼产品经理</b></li></ul></div>
-  <div class="r" style="--d:0.65s" style="--d:.65s;margin-top:34px"><div class="kicker" style="font-size:22px">2022.11 — 至今</div>
-   <h3 style="font:700 36px/1.4 var(--serif);margin:14px 0 12px">浙江华东工程建设管理有限公司　智慧建造研究院</h3>
+  <div class="r" style="--d:0.65s" style="--d:.65s;margin-top:34px"><div class="kicker" style="font-size:26px">2022.11 — 至今</div>
+   <h3 style="font:700 39px/1.4 var(--serif);margin:14px 0 12px">浙江华东工程建设管理有限公司　智慧建造研究院</h3>
    <ul class="dash"><li>产品经理 → 产品管理 → <b>部门研发管理</b></li><li>抽蓄建设管理平台基线版本规划与研发</li><li>抽蓄管理数字化提升技术落地</li><li>部门在建项目研发统筹</li></ul></div>
  </div>
 </div></div>
@@ -329,7 +329,7 @@ body.editing [contenteditable]{outline:1px dashed rgba(200,168,112,.6)}
 <div class="r" style="--d:0.10s"><div class="kicker">成绩一 · 负责技术落地</div><h2>抽蓄管理数字化提升：<em>先流程、再数据、后 IT</em></h2></div>
 <div class="cols c3" style="margin-top:44px">
  <div class="r step" style="--d:0.30s"><div class="no">01 · 任务在线</div><h3>让流程在系统里跑起来</h3>
-  <div style="display:flex;align-items:baseline;gap:16px;margin:12px 0 18px"><span class="stat" data-count="120" data-suffix="+">120+</span><span class="muted" style="font-size:22px">配套表单上线</span></div>
+  <div style="display:flex;align-items:baseline;gap:16px;margin:12px 0 18px"><span class="stat" data-count="120" data-suffix="+">120+</span><span class="muted" style="font-size:26px">配套表单上线</span></div>
   <ul class="dash"><li>选型调研、功能验证、项目推广 <b>全程组织</b></li><li>进度驱动工作启动，开工前自动提醒</li><li>部门任务按固化流程下达到岗</li></ul></div>
  <div class="r step" style="--d:0.45s"><div class="no">02 · 数据看板</div><h3>让数据能用来管理</h3><div class="sub">抽蓄项目安全数据看板</div>
   <ul class="dash"><li><b>现场状态</b>：作业、人员、设备、风险</li><li><b>预警</b>：持证、检测到期前 30 天；作业许可到期前 6 小时</li><li><b>工作看板</b>：临期预警、超期报警</li></ul></div>
@@ -344,7 +344,7 @@ body.editing [contenteditable]{outline:1px dashed rgba(200,168,112,.6)}
 <div class="r" style="--d:0.10s"><div class="kicker">成绩二至四</div><h2>统筹研发、规划产品、<em>负责项目履约</em></h2></div>
 <div class="cols c3">
  <div class="r step" style="--d:0.30s"><div class="no">成绩二 · 部门研发统筹</div>
-  <div style="display:flex;align-items:baseline;margin:18px 0 6px"><span class="stat" data-count="10">10</span><small style="font:500 26px var(--sans);color:var(--gold);margin-left:10px">个在建项目</small></div>
+  <div style="display:flex;align-items:baseline;margin:18px 0 6px"><span class="stat" data-count="10">10</span><small style="font:500 31px var(--sans);color:var(--gold);margin-left:10px">个在建项目</small></div>
   <div class="sub">研发排期与开发资源调配</div>
   <ul class="dash"><li>需求池、排期到人到天、上线单、逾期提醒</li><li>每月统计各项目资源投向</li><li>按交付节点定优先级，保障各项目节点</li></ul></div>
  <div class="r step" style="--d:0.45s"><div class="no">成绩三 · 抽蓄管控平台</div>
@@ -381,9 +381,9 @@ body.editing [contenteditable]{outline:1px dashed rgba(200,168,112,.6)}
 <div class="r" style="--d:0.10s"><div class="kicker">举措一 · 管研发</div><h2>借助 AI，<em>同样的人交付更多成果</em></h2></div>
 <div class="cols c4" style="flex:none;margin-top:48px"><div class="r step" style="--d:0.30s"><div class="no">01</div><h3>产品</h3><ul class="dash" style="margin-top:14px"><li>AI 生成需求文档初稿和可点击原型</li><li class="muted">产品经理专注业务规则与验收标准</li></ul></div><div class="r step" style="--d:0.42s"><div class="no">02</div><h3>开发</h3><ul class="dash" style="margin-top:14px"><li>AI 编程工具生成重复性代码</li><li class="muted">开发人员负责架构与代码审查</li></ul></div><div class="r step" style="--d:0.54s"><div class="no">03</div><h3>测试</h3><ul class="dash" style="margin-top:14px"><li>AI 生成测试用例和自动化脚本</li><li class="muted">回归测试自动执行</li></ul></div><div class="r step" style="--d:0.66s"><div class="no">04</div><h3>交付运维</h3><ul class="dash" style="margin-top:14px"><li>AI 生成操作手册和培训材料</li><li class="muted">知识库问答机器人先答疑</li></ul></div></div>
 <div class="cols c3" style="flex:none;margin-top:auto;padding-top:30px;border-top:1px solid var(--bl);gap:56px">
- <div class="r" style="--d:0.90s"><h3 style="font:700 30px/1.3 var(--serif)">沉淀共用 AI 资产</h3><p class="muted" style="font-size:22px;line-height:1.7;margin-top:8px">提示词库、技能库，一人摸索，全组复用</p></div>
- <div class="r" style="--d:1.02s"><h3 style="font:700 30px/1.3 var(--serif)">能配置的不开发</h3><p class="muted" style="font-size:22px;line-height:1.7;margin-top:8px">平台能配置的需求不做定制开发</p></div>
- <div class="r" style="--d:1.14s"><h3 style="font:700 30px/1.3 var(--serif)">培养一专多能</h3><p class="muted" style="font-size:22px;line-height:1.7;margin-top:8px">产品会用 AI 做简单功能，人员调配更灵活</p></div>
+ <div class="r" style="--d:0.90s"><h3 style="font:700 35px/1.3 var(--serif)">沉淀共用 AI 资产</h3><p class="muted" style="font-size:26px;line-height:1.7;margin-top:8px">提示词库、技能库，一人摸索，全组复用</p></div>
+ <div class="r" style="--d:1.02s"><h3 style="font:700 35px/1.3 var(--serif)">能配置的不开发</h3><p class="muted" style="font-size:26px;line-height:1.7;margin-top:8px">平台能配置的需求不做定制开发</p></div>
+ <div class="r" style="--d:1.14s"><h3 style="font:700 35px/1.3 var(--serif)">培养一专多能</h3><p class="muted" style="font-size:26px;line-height:1.7;margin-top:8px">产品会用 AI 做简单功能，人员调配更灵活</p></div>
 </div></div>
 <div class="foot"><span></span><span data-page></span></div></section>
 <section class="slide dark">
